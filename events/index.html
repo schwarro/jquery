@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+      body {
+        font-size: 17px;
+        font-family: ariel;
+        background: #f4f4f4;
+        line-height: 1.5em;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 4px #000 solid;
+        margin-bottom: 10px;
+      }
+      #container {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>jQuery Course</h1>
+    </header>
+    <div id="container">
+      <h3>Mouse Events</h3>
+      <button id="btn1">Button 1</button>
+      <button id="btn2">Button 2</button>
+      <p id="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget egestas purus viverra accumsan in. Nulla posuere sollicitudin aliquam ultrices sagittis orci. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Integer feugiat scelerisque varius morbi enim nunc. <span>Turpis egestas integer eget aliquet nibh praesent tristique.</span> Integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Sagittis eu volutpat odio facilisis mauris sit amet massa vitae.</p>
+      <hr>
+
+      <form>
+        <label>Name</label><br>
+        <input type="text" id="name" name="name">
+        <br>
+        <label>Email</label><br>
+        <input type="email" id="email" name="email">
+        <br>
+        <label>Gender</label><br>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <script>
+    $(document).ready(function(){
+      // $('#btn1').click(function(){
+      //   alert('Button Clicked');
+      // });
+      // $('#btn1').on('click', function(){
+      //   alert('Button Clicked')
+      // })
+      // $('#btn1').click(function(){
+      //   $('#para1').hide()
+      // });
+      // $('#btn2').click(function(){
+      //   $('#para1').show()
+      // });
+      // $('#btn1').click(function(){
+      //   $('#para1').toggle()
+      // });
+      // $('#btn1').dblclick(function(){
+      //   $('#para1').toggle();
+      // })
+      // $('#btn1').hover(function(){
+      //   $('#para1').toggle();
+      // })
+      // $('#btn1').mouseenter(function(){
+      //   $('#para1').toggle();
+      // })
+      // $('#btn1').mouseleave(function(){
+      //   $('#para1').toggle();
+      // })
+      // $('#btn1').mousemove(function(){
+      //   $('#para1').toggle();
+      // })
+      // $('#btn1').mousedown(function(){
+      //   $('#para1').toggle();
+      // })
+      // $('#btn1').mouseup(function(){
+      //   $('#para1').toggle();
+      // })
+      // $('#btn1').click(function(e){
+      //   console.log(e.currentTarget.id);
+      //   console.log(e.currentTarget.innerHTML);
+      //   console.log(e.currentTarget.outerHTML);
+      // })
+      // $('input').focus(function(){
+      //   // alert('Focus');
+      //   $(this).css('background', 'purple');
+      // });
+      // $('input').blur(function(){
+      //   $(this).css('background', 'white');
+      // });
+      // $('input').keyup(function(e){
+      //   console.lg(e.target.value);
+      // });
+      // $('#gender').change(function(e){
+      //   alert(e.target.value);
+      // });
+      $('#form').submit(function(e){
+        e.preventDefault();
+        var name = $('#name').val();
+        console.log('sybmitted');
+      });
+    });
+    </script>
+  </body>
+</html>
+``
